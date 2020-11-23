@@ -31,7 +31,7 @@
   ],
   "main": "src/index.js",
   "scripts": {
-    "develop": "wrangler dev",
+    "start": "wrangler dev",
     "build": "wrangler build",
     "deploy": "wrangler publish",
     "format": "eslint ./src --fix --report-unused-disable-directives",
