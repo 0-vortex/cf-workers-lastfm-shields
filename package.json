@@ -18,7 +18,9 @@
   "description": "Generate last.fm last played shields with Cloudflare Workers in 200+ edge locations",
   "keywords": [
     "badges",
+    "badges-markdown",
     "lastfm",
+    "lastfm-api",
     "markdown",
     "markdown-badges",
     "github",
