@@ -15,7 +15,7 @@
     "npm": ">=6"
   },
   "license": "BSD-3-Clause",
-  "description": "Generate last.fm last played shields with Cloudflare Workers in 200+ edge locations",
+  "description": "Generate last.fm most recently played shields endpoint configuration with Cloudflare Workers in 200+ edge locations",
   "keywords": [
     "badges",
     "badges-markdown",
