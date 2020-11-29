@@ -2,7 +2,7 @@ const schema = {
   schemaVersion: 1,
   label: 'Last Played',
   message: 'The Other Side of the Dark by Buckethead',
-  color: 'red',
+  color: 'lightgrey',
   labelColor: 'grey',
   namedLogo: 'last.fm',
   logoColor: 'red',
@@ -28,8 +28,9 @@ const handleRequest = async () => {
     if (typeof (mostRecentPlayed) !== 'undefined') {
       schema.message = `${mostRecentPlayed.name} by ${mostRecentPlayed.artist['#text']}`;
 
-      if (mostRecentPlayed['@attr'].nowplaying !== true) {
-        schema.message.color = 'lightgrey';
+      if (typeof (mostRecentPlayed['@attr']) !== 'undefined'
+        && mostRecentPlayed['@attr'].nowplaying === true) {
+        schema.message.color = 'red';
       }
     }
 
