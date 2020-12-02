@@ -29,8 +29,8 @@ const handleRequest = async () => {
       schema.message = `${mostRecentPlayed.name} by ${mostRecentPlayed.artist['#text']}`;
 
       if (typeof (mostRecentPlayed['@attr']) !== 'undefined'
-        && mostRecentPlayed['@attr'].nowplaying === true) {
-        schema.message.color = 'red';
+        && mostRecentPlayed['@attr'].nowplaying === 'true') {
+        schema.color = 'red';
       }
     }
 
