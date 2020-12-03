@@ -31,6 +31,7 @@ const handleRequest = async () => {
       if (typeof (mostRecentPlayed['@attr']) !== 'undefined'
         && mostRecentPlayed['@attr'].nowplaying === 'true') {
         schema.color = 'red';
+        schema.label = 'Now Playing';
       }
     }
 
